@@ -53,4 +53,6 @@ Rails5Sample::Application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   # config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
+  config.session_store_servers = 'redis://localhost:6379/0'
 end
